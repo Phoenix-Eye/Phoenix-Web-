@@ -19,8 +19,7 @@ import type { Alert } from "~/Components/Alerts/EmergencyAlerts";
 import PopUp from "~/pages/MenuPages/PopUp";
 
 const CENTER_COORDS: [number, number] = [-110.8968082457804, 31.25933620026809];
-const MAPBOX_ACCESS_TOKEN =
-  "pk.eyJ1IjoiaGVjdG9yZ3R6MjciLCJhIjoiY2xuZ3dmc215MDc2ZDJqbWFydmszaTVxZCJ9.VjBUl1K3sWQTxY5pce434A";
+const MAPBOX_ACCESS_TOKEN = process.env.MAPBOX_ACCESS_TOKEN ?? "";
 const INITIAL_ZOOM = 15;
 const INITIAL_PITCH = 60;
 
